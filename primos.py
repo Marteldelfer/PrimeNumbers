@@ -1,8 +1,8 @@
-def primos(n: int):
+def primos(n: int) -> list:
     lista = [2]
 
     for a in range(3, n, 2):
-        divisível = False
+        divisível: bool = False
         for b in lista:
             if a%b == 0:
                 divisível = True
