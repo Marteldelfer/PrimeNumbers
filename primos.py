@@ -1,3 +1,14 @@
+def is_prime(n: int):
+    divisivel = False
+    if n == 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            divisivel = True
+            break
+    return not divisivel
+
+
 def find_nth_prime(n: int) -> int:
     lista: list = [2]
     counter: int = 1
